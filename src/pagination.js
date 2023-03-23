@@ -15,7 +15,7 @@ module.exports = function (list) {
     }
 
     var item,
-      l = list.matchingItems.length,
+      l = list.totalLength ? list.totalLength : list.matchingItems.length,
       index = list.i,
       page = list.page,
       pages = Math.ceil(l / page),
